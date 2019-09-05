@@ -73,7 +73,7 @@ describe("The payroll system", function () {
       let bpRecord, updatedBpRecord, newEvent
 
       it("creates the correct type", function () {
-        let bpRecord = createEmployeeRecord(["Byron", "Poodle", "Mascot", 3])
+        let bpRecord = createEmployeeRecord(["Byron", "Poodle", "Mascot", 3]) ////////
         let updatedBpRecord = createTimeInEvent(bpRecord, "2014-02-28 1400")
         let newEvent = updatedBpRecord.timeInEvents[0]
         expect(newEvent.type).to.equal("TimeIn")
